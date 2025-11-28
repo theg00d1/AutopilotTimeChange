@@ -51,3 +51,10 @@ If you're versioning your script or deployment logic
 - **Value name:** `Version`  
 - **Detection method:** *ValueExist*  
 
+### You can also set detection logic to FILE 
+
+"C:\ProgramData\Microsoft\IntuneManagementExtension\Logs\Set-TimeZoneByIPAddress-script.log"
+
+## With updated Uninstall command
+
+powershell.exe -ExecutionPolicy Bypass -Command "Remove-Item -Path '$env:ProgramData\Microsoft\IntuneManagementExtension\Logs\set-timezonebyipaddress-script.log' -Force"
