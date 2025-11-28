@@ -47,9 +47,7 @@ Specify the minimum OS version and architecture (e.g., Windows 11 64-bit).
 
 If you're versioning your script or deployment logic
 
-- **Key path:** `HKLM\Software\AP-SetTimezone`  
+- **Key path:** `HKEY_LOCAL_MACHINE\SOFTWARE\AP-SetTimezone`  
 - **Value name:** `Version`  
-- **Detection method:** *Equals*  
-- **Value type:** `REG_DWORD`  
-- **Value data:** `1` *(or update as needed for future versions)*
+- **Detection method:** *ValueExist*  
 
