@@ -60,7 +60,7 @@ try {
     Write-Error "Failed to set Windows time zone: $_"
 }
 Stop-Transcript
-$Path = "HKLM:\SOFTWARE\AP-SetTimezone\"
+$Path = "HKEY_LOCAL_MACHINE\SOFTWARE\AP-SetTimezone"
 $Key = "Version" 
 $KeyFormat = "dword"
 $Value = "1"
